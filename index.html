@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивный кустик цветков</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Интерактивный кустик цветков</h1>
+            <p class="description">Кликните на любой цветок, чтобы перевести его на следующий этап развития. Каждый цветок проходит три этапа: бутон → цветение → увядание.</p>
+            
+            <div class="stages-info">
+                <div class="stage-card">
+                    <h3>1. Бутон</h3>
+                    <p>Цветок только появляется. Скромный бутон готовится раскрыться.</p>
+                </div>
+                <div class="stage-card">
+                    <h3>2. Цветение</h3>
+                    <p>Цветок полностью раскрывается, показывая всю свою красоту.</p>
+                </div>
+                <div class="stage-card">
+                    <h3>3. Увядание</h3>
+                    <p>Цветок завершает свой жизненный цикл, увядая и засыхая.</p>
+                </div>
+            </div>
+        </header>
+        
+        <div class="controls">
+            <button id="growAllBtn">Вырастить все цветки</button>
+            <button id="resetBtn">Сбросить все</button>
+            <button id="addFlowerBtn">Добавить цветок</button>
+        </div>
+        
+        <div class="flower-bed" id="flowerBed">
+            <!-- Цветки будут добавлены сюда через JavaScript -->
+        </div>
+        
+        <div class="instructions">
+            <h2>Как использовать</h2>
+            <p>1. <strong>Кликните на цветок</strong>, чтобы перевести его на следующий этап развития.</p>
+            <p>2. Используйте кнопку <strong>"Вырастить все цветки"</strong>, чтобы одновременно перевести все цветки на следующий этап.</p>
+            <p>3. Используйте кнопку <strong>"Сбросить все"</strong>, чтобы вернуть все цветки в начальное состояние (бутон).</p>
+            <p>4. Используйте кнопку <strong>"Добавить цветок"</strong>, чтобы добавить новый цветок в кустик.</p>
+            <p>Каждый цветок независим и проходит свой собственный жизненный цикл из трех этапов.</p>
+        </div>
+        
+        <footer>
+            <p>Интерактивный кустик цветков с тремя этапами развития | Создано с использованием HTML, CSS и JavaScript</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
